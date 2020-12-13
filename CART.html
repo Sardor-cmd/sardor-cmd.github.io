@@ -1,0 +1,326 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+	<link rel="stylesheet" type="text/css" href="animate.css" />
+
+	<link href="https://fonts.googleapis.com/css2?family=Work+Sans:wght@400;600&display=swap" rel="stylesheet">
+
+	<link rel="preconnect" href="https://fonts.gstatic.com">
+	
+	<link href="https://fonts.googleapis.com/css2?family=Work+Sans:wght@100;200;300;400;500;600;700;800;900&display=swap" rel="stylesheet">
+
+	<link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.6.1/css/all.css"
+	integrity="sha384-gfdkjb5BdAXd+lj+gudLWI+BXq4IuLW5IT+brZEZsLFm++aCMlF1V92rMkPaX4PP" crossorigin="anonymous">
+
+	<link rel="stylesheet" type="text/css" href="css/styleCART.css">
+	<title>Document</title>
+</head>
+<body>
+	<div class="contacts">
+		<div class="wrapper clear">
+			<div class="contact-flex">
+				<div class="number">
+						<button id="myBtn1"><i class="fas fa-phone"></i></i> Заказать звонок?</button>
+
+						<div id="myModal1" class="modal">
+
+ 
+  						<div class="modal-content1">
+    						<div class="modal-header1">
+      						<span class="close1">&times;</span>
+      							<p class="call1"><i class="fas fa-headset"></i></p>
+								<p class="block__text1">
+									- Хотите перезвоним вам за 30 секунд?
+								</p>
+								<form action="javascript:void(0)" name="form" id="formLogin">
+									<input type="text" class="contact__item2" placeholder="Ваш номер" required="" id="phone" name="tel" pattern="+ 996 ([0-9]{3}) [0-9]{2}-[0-9]{2}-[0-9]{2}" type="tel">
+									<button class="button1" id="btn234" type='submit'> Жду звонка </button>
+									<h2 class="timer2342">
+										<span class="span22" id="sec">29</span>
+										<span class="span22">:</span>
+										<span class="span22" id="msec">99</span>
+									</h2>
+								</form>
+    						</div>
+    						<p class="bottom__text">
+    							Свободных операторов на линии: 10.
+    						</p>
+    						<p class="bottom__text">
+    							В процессе разговора с клиентами: 15.
+    						</p>
+    						<p class="bottom__text">
+    							Облуженных вызовов за сегодня: 150.
+    						</p>
+  						</div>
+  				</div>
+  				<div class="regist">
+						<button id="myBtn"><i class="fas fa-envelope"></i> Регистрация</button>
+						<div id="myModal" class="modal">
+							<div class="modal-content">
+    							<div class="modal-header">
+      								<span class="close">&times;</span>
+										<p class="block__text">
+											Обратная связь
+										</p>
+										<form action="" class="clear">
+											<input class="contact__item1" type="email" placeholder="Your GMAIL*" required="">
+											<input class="contact__item1" type="password" placeholder="Password*" required="">
+											<button class="button"> Вход </button>
+										</form>
+    							</div>
+  							</div>
+
+						</div>
+				</div>
+				<div class="delivery">
+						<p class="contact__text">
+							Доставка от 3-5 рабочих дней и Бесплатный возврат.
+						</p>
+				</div>
+			</div>
+		</div>
+	</div>
+	</div>
+	<div class="header">
+		<div class="wrapper clear">
+			<div class="header-flex">
+				<div class="block">
+					<div class="header-flex1">
+						<a href="SHOP.html" class="header__logo">
+							<img src="images/logo.png" alt="..." class="logoimg">
+						</a>
+					</div>
+				</div>
+				<div class="header-flex2">
+					<nav>
+						<input type="checkbox" name="menu" id="btn-menu" />
+    					<label for="btn-menu" class="btnmenu">Меню <i class="fas fa-bars"></i></label>
+						<ul id="dropdownmenu" class="menu21">
+  							<li>
+  								<a href="SHOP.html" class="link hvr-grow">Главная</a>
+  							</li>
+  							<li>
+    							<a href="#" class="link hvr-grow">Магазин <i class="fas fa-sort-down "></i></a>
+    							<ul>
+      								<li><a href="#">Title 1</a></li>
+      								<li><a href="#">Title 2</a></li>
+      								<li><a href="#">Title 3</a></li>		
+      								<li><a href="#">Title 4</a></li>
+    							</ul>
+  							</li>
+  							<li>
+  								<a href="ABOUT.html" class="link hvr-grow">О нас</a>
+  							</li>
+  							<li>
+    							<a href="#" class="link hvr-grow">Блог</a>
+  							</li>
+  							<li>
+  								<a href="CONTACT.html" class="link hvr-grow">Контакты</a>
+  							</li>
+  							<li>
+  								<a href="#" class="link hvr-grow"><i class="fas fa-shopping-cart"></i></a>
+  							</li>
+						</ul>
+					</nav>
+				</div>
+			</div>
+		</div>
+	</div>
+	<div class="greeting">
+		<div class="wrapper clear">
+			<div class="greeting-flex">
+				<h1 class="greeting__head animation-target">
+					Корзина
+				</h1>
+			</div>
+		</div>
+	</div>
+	<div class="cart">
+		<div class="wrapper clear">
+			<div class="cart-flex">
+				<div class="description des-flex">
+					<p class="des__text">Название</p>
+					<p class="des__text">Цена</p>
+					<p class="des__text">Количество</p>
+					<p class="des__text">Итого</p>		
+				</div>
+				<div class="products prod-flex">
+					<button class="close123">x</button>
+					<img class="prod__img" src="images/apple.png" alt="...">
+					<p class="prod__text">Красные яблоки</p>
+					<p class="price">80$</p>
+					<input type="text" name="quantity" class="quantity" value="1" min="1" max="100">
+					<p class="total">80$</p>
+				</div>
+				<div class="products prod-flex">
+					<button class="close123">x</button>
+					<img class="prod__img" src="images/mango.png" alt="...">
+					<p class="prod__text">Манго</p>
+					<p class="price">80$</p>
+					<input type="text" name="quantity" class="quantity" value="1" min="1" max="100">
+					<p class="total">80$</p>
+				</div>
+				<div class="products prod-flex">
+					<button class="close123">x</button>
+					<img class="prod__img" src="images/orange.png" alt="...">
+					<p class="prod__text">Мандарины</p>
+					<p class="price">80$</p>
+					<input type="text" name="quantity" class="quantity" value="1" min="1" max="100">
+					<p class="total">80$</p>
+				</div>
+			</div>
+		</div>
+	</div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+	<div class="subscribe">
+		<div class="wrapper clear">
+			<div class="subscribe-flex">
+				<div class="subscribe-flex1">
+					<h2 class="subscribe__head">
+						Подписывайтесь на нашу рассылку!
+					</h2>
+					<p class="subscribe__text">
+						Получайте оповщения о нововведениях и скидках!
+					</p>
+				</div>
+				<div class="subscribe-flex2">
+					<form action="" class="clear">
+					<div class="subscribe__mail">
+					<input class="subscribe__mail-item" type="text" placeholder="Your@mail.com">
+					<input type="submit" class="button3" value="Подписаться" />
+					</div>
+					</form>
+				</div>
+			</div>
+		</div>
+	</div>
+	<div class="footer">
+		<div class="wrapper clear">
+			<div class="footer-flex">
+				<div class="footer__item">
+					<div class="footer-flex1">
+						<h2 class="footer__item-text">
+							GREENFOOD
+						</h2>
+						<p class="footer__text">
+							Основа нашего ассортимента – это биопродукты или экопродукты, выращенные на благодатной почве, без удобрений или изготовленные без применения ГМО, синтетических красителей и ароматических добавок, а также других веществ, которые могли бы навредить вашему здоровью.
+						</p>
+					</div>
+				</div>
+				<div class="footer__item">
+					<div class="footer-flex1">
+						<h2 class="footer__item-text">
+							Меню
+						</h2>
+						<a href="#" class="footer__link">
+							Магазин
+						</a>
+						<a href="#" class="footer__link">
+							О Нас
+						</a>
+						<a href="#" class="footer__link">
+							Каталог
+						</a>
+						<a href="#" class="footer__link">
+							Контакты
+						</a>
+					</div>
+				</div>
+				<div class="footer__item">
+					<div class="footer-flex1">
+						<h2 class="footer__item-text">
+							Поддержка
+						</h2>
+						<a href="#" class="footer__link">
+							FAQ
+						</a>
+						<a href="#" class="footer__link">
+							Условия и положения
+						</a>
+						<a href="#" class="footer__link">
+							Возврат и обмен
+						</a>
+						<a href="#" class="footer__link">
+							Политика конфиденциальности
+						</a>
+					</div>
+				</div>
+				<div class="footer__item">
+					<div class="footer-flex1">
+						<h2 class="footer__item-text">
+							Адрес:
+						</h2>
+						<p class="footer__text">
+							<i class="fas fa-map-marker-alt"></i> Кыргызыская  Республика, г.Бишкек. Ул. Московская 122.
+						</p>
+						<p class="footer__text">
+							<i class="fas fa-phone"></i> 
+							+ 996 703 07 05 02
+						</p>
+						<p class="footer__text">
+							<i class="fas fa-envelope"></i> 
+							info@yourdomain.com
+						</p>
+					</div>
+				</div>
+			</div>
+		</div>
+	</div>
+	<div class="upbutton123">
+		<a id="upbutton" href="#" onclick="smoothJumpUp(); return false;">
+    		<img src="images/up.png" alt="Top" border="none" title="Наверх">
+		</a>
+	</div>
+	<div class="copyright">
+		<div class="wrapper clear">
+			<p class="copyright__text">Сopyright 
+				<i class="far fa-copyright"></i> 2020. Все права защищены.
+			</p>
+		</div>
+	</div>
+</body>
+</html>

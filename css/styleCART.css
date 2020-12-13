@@ -492,7 +492,7 @@ nav label:hover{
 	background-image: url(https://bm.img.com.ua/berlin/storage/finance/orig/f/f3/679e3fe06c8a4bbfda47d1321ddd3f3f.jpg);
 	background-size: cover;
 	background-repeat: no-repeat;
-	height: 630px;
+	height: 400px;
 	text-align: center;
 }
 .greeting-flex {
@@ -506,7 +506,7 @@ nav label:hover{
 	font-weight: 300;
 	color: white;
 	font-family: 'Grandstander', cursive;
-	margin-top: 110px;
+	margin-top: 150px;
 }
 .greeting__text {
 	font-size: 20px;
@@ -610,489 +610,142 @@ nav label:hover{
 
 
 
-/*Блок-4 Каталог*/
 
-.catalog {
-  min-height: 520px;
-  background-repeat: no-repeat;
-  background-position: center;
-  background-size: cover;
+/*Блок-5 Корзина*/
 
+.cart {
+  min-height: 700px;
 }
-.catalog-flex {
-  display: flex;
-  flex-direction: row;
-  flex-wrap: wrap;
-  justify-content: center;
-}
-.catalog-flex1 {
-  display: flex;
-  flex-direction: row;
-  flex-wrap: wrap;
-  justify-content: center;
-}
-.catalog-item {
-  background-size: cover;
-  width: 350px;
-  height: 210px;
-  margin: 15px 25px;
-  text-align: center;
-}
-.catalog__head {
-  font-size: 25px;
-  font-family: 'Grandstander', cursive; 
-  font-weight: 300;
-  color: #80cd51;
-  background-image: linear-gradient(currentColor, currentColor);
-  background-position: 50% 100%;
-  background-repeat: no-repeat;
-  background-size: 0% 2px;
-  transition: background-size .4s;
-}
-.catalog__head:hover {
-  background-size: 100% 2px;
-  transition: .4s;
-  cursor: default;
-}
-.catalog__text {
-  font-size: 18px;
-  font-weight: 400;
-  color: black;
-  margin-top: 30px;
-}
-.catalog__link {
-  color: white;
-  font-size: 16px;
-  font-weight: 400;
-  text-decoration: none;
-  background: #80cd51;
-  padding: 10px 15px;
-  border-radius: 35px;
-  border: 1px solid #80cd51;
-  display: block;
-  max-width: 110px;
-  margin: 0 auto;
-  margin-top: 30px;
-}
-.catalog__link:hover {
-  color: #80cd51;
-  border: 1px solid #80cd51;
-  text-decoration: none;
-  background: white;
-  transition: .3s;
-}
-.catalog-item1 {
-  background-size: cover;
-  width: 350px;
-  height: 210px;
-  margin: 15px 43px;
-  margin-top: 25px;
-  display: inline-block;
-  overflow: hidden;
-  border-radius: 5px;
-  position: relative;
-}
-.catalog-item2 {
-  background-size: cover;
-  width: 350px;
-  height: 210px;
-  margin: 15px 25px;
-}
-.zoom1 {
-  display: inline-block;
-  overflow: hidden;
-  width: 350px;
-  height: 210px;
-}
-.zoom1 img {
-  transition: 1s;
-  display: block;
-}
-.zoom1 img:hover {
-  transform: scale(1.2);
-}
-
-.poster-popup{
-  width: 1px;
-  height: 1px;
-  position: absolute;
-  display: none;
-  color: black;
-  font-size: 40px;
-  color: white;
-  font-family: 'Grandstander', cursive; 
-  z-index: -1; 
-}
-.catalog-item1:hover .poster-popup{
-  display: block;
-  z-index: 1999;
-}
-.item3 {
-  padding-left: 90px;
-  padding-top: 80px;
-}
-.item1 {
-  padding-left: 100px;
-  padding-top: 80px;
-}
-.item2 {
-  padding-left: 100px;
-  padding-top: 80px;
-}
-.item4 {
-  padding-left: 60px;
-  padding-top: 80px;
-}
-
-
-
-
-/*Блок-5 Продукты*/
-
-.products {
-  min-height: 1180px;
-}
-.product-flex1 {
+.cart-flex {
   display: flex;
   flex-direction: column;
-  flex-wrap: wrap;
-  justify-content: center;
-  align-items: center;
-}
-.product__text {
-  font-size: 35px;
-  font-family: 'Grandstander', cursive;
-  color: #80cd51;
-  font-size: 35px;
-  padding-top: 20px;
-  text-align: center;
-  background-image: linear-gradient(currentColor, currentColor);
-  background-position: 50% 100%;
-  background-repeat: no-repeat;
-  background-size: 0% 2px;
-  transition: background-size .4s;
-}
-.product__text:hover {
-  background-size: 100% 2px;
-  transition: .4s;
-  cursor: default;
-}
-.product__text2 {
-  font-size: 18px;
-  font-family: 'Work Sans', sans-serif;
-  color: black;
-  padding: 20px;
-  text-align: center;
-}
-.product-flex2 {
-  display: flex;
-  flex-direction: row;
-  flex-wrap: wrap;
   justify-content: center;
 }
-.product__item {
-  max-width: 297.5px;
-  max-height: 430px;
-  border: 1px solid #80cd51;
-  border-radius: 5px;
-  text-align: center;
-  margin-top: 30px;
-  position: relative;
-  margin: 30px;
-}
-.discount {
-  position: absolute;
-  color: yellow;
-  background: red;
-  padding: 5px;
-  top: 0;
-  left: 0;
-  border-radius: 5px;
-  font-weight: 600;
-}
-.product__image {
-  max-width: 227.5px;
-  max-height: 220px;
-  background-size: cover;
-  background-repeat: no-repeat;
-}
-.product__item-title-name {
-  font-size: 20px; 
-  color: #80cd51;
-  font-family: 'Grandstander', cursive;
+.description {
+  background: #80cd51;
   margin-top: 50px;
 }
-.product__item-title-price {
-  font-size: 12px;
-  color: green;
+.des-flex {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: flex-end;
 }
-.del {
-  color: #999999;
-  font-size: 12px;
+.des__text {
+  color: white;
+  font-size: 18px;
+  padding: 12px 86px;
+  font-family: 'Work Sans', sans-serif;
+  font-weight: 400; 
 }
-.product__link {
-  font-size: 16px;
-  font-weight: 400;
-  display: block;
-  text-decoration: none;
-  max-width: 155px;
+.products {
+  margin: 20px 0;
+  min-height: 120px;
+  border-bottom: 1px solid #80cd51;
+}
+.prod-flex {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+}
+.close123 {
+  margin: 68px 10px;
+  color: black;
+  padding: 5px;
+  background: white;
+  border: 1px solid #80cd51;
+}
+.close123:hover {
   color: white;
   background: #80cd51;
-  padding: 10px 15px;
-  border-radius: 35px;
-  margin: 0 auto;
-  margin-top: 30px;
-  margin-bottom: 22px;
-  border: 1px solid #80cd51;
+  transition: 0.4s
 }
-.product__link:hover {
-  background: white;
-  color: #80cd51;
-  border: 1px solid #80cd51;
-  transition: 0.3s;
+.prod__img {
+  width: 160px;
+  height: 160px;
 }
-.product__item-title2 {
-  z-index: 999;
-}
-
-
-
-
-/*Блок-6 Скидка*/
-
-.discounts {
-  background-image: url(https://krot.info/uploads/posts/2020-01/1579377353_23-70.jpg);
-  background-size: cover;
-  background-repeat: no-repeat;
-  min-height: 630px;
-}
-.discounts-flex {
-  display: flex;
-  flex-direction: column;
-  flex-wrap: wrap;
-  justify-content: flex-start;
-}
-.discounts__text {
-  font-size: 35px;
-  font-family: 'Grandstander', cursive;
-  color: #21d121;
-  margin-top: 90px;
-  margin-left: 60px;
-}
-.discounts__head {
-  color: black; 
-  font-size: 50px;
-  font-family: 'Work Sans', sans-serif; 
-  margin-top: 0px;
-  margin-left: 50px;
-}
-.discounts__text2 {
+.prod__text {
+  width: 160px;
   color: black;
   font-size: 20px;
   font-family: 'Work Sans', sans-serif;
-  max-width: 750px;
-  margin-top: -20px;
-  margin-left: 60px; 
+  font-weight: 500;
+  margin-top: 70px;
 }
-.discounts__text3 {
-  font-size: 40px;
-  font-family: 'Grandstander', cursive;
-  color: #21d121; 
-  margin-top: 0px;
-  margin-left: 60px;
-  text-decoration: none; 
-}
-.zoom2 {
-  transition: 1s;
-  display: block;
-}
-.zoom2:hover {
-  transform: scale(1.01);
-  color: red;
-}
-.discounts__price {
-  color: #21d121;
-  font-size: 16px;
-  font-family: 'Work Sans', sans-serif; 
-  margin-top: 30px;
-}
-.del1 {
-  color: gray;
-  font-size: 16px;
-  font-family: 'Work Sans', sans-serif;
-  padding-left: 65px;
-  padding-right: 10px;
-}
-.discounts-flex2 {
-  display: flex;
-  flex-direction: row;
-  flex-wrap: wrap;
-  justify-content: flex-start;
-}
-.timer {
-  max-width: 100px;
-  max-height: 85px;
-  margin: 5px;
-  margin-left: 60px;
-}
-.timer-flex {
-  display: flex;
-  flex-direction: column;
-  flex-wrap: wrap;
-  justify-content: center;
-}
-.timer__item {
-  font-size: 60px;
-  font-family: 'Work Sans', sans-serif;
-  color: #21d121; 
-  margin: auto;
-}
-.timer__item1 {
-  font-size: 17px;
-  font-family: 'Work Sans', sans-serif;
-  color: gray;
-}
-@media screen and (width: 320px;){
-  .timer__item {
-    font-size: 40px;
-  }
-  .timer__item1 {
-    font-size: 16px;
-  }
-}
-@media screen and (width: 375px) {
-  .timer {
-    margin-left: 37px;
-  }
-  .timer__item {
-    font-size: 40px;
-  }
-  .subscribe__mail-item {
-    margin-top: 40px;
-    width: 90vw;
-  }
-  .discounts__text3 {
-    margin-left: 30px;
-  }
-  .discounts__text2 {
-    margin-left: 30px;
-  }
-  .discounts__head {
-    margin-left: 40px;
-  }
-}
-@media screen and (width: 320px) {
-  .discounts__head {
-    font-size: 38px;
-  }
-  .timer {
-    margin-left: 20px;
-  }
-  .timer__item {
-    font-size: 40px;
-  }
-  .subscribe__mail-item {
-    margin-top: 40px;
-    width: 90vw;
-  }
-  .subscribe__mail-item {
-    margin-top: 40px;
-    width: 70vw;
-  }
-  .block__seller  {
-    width: 313px;
-  }
-  .button3 {
-    margin-top: 10px;
-    margin-left: 50px;
-    margin-bottom: 20px;
-  }
-}
-
-
-
-/*Блок-7 Коментарии*/
-
-.comments {
-  min-height: 660px;
-}
-.comments-flex1 {
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  flex-wrap: wrap;
+.quantity {
   text-align: center;
-}
-.comments__head {
-  font-size: 35px;
-  font-family: 'Grandstander', cursive;
-  color: #21d121;
-  margin-top: 50px;
-  background-image: linear-gradient(currentColor, currentColor);
-  background-position: 50% 100%;
-  background-repeat: no-repeat;
-  background-size: 0% 2px;
-  transition: background-size .4s;
-}
-.comments__head:hover {
-  background-size: 22% 2px;
-  transition: .4s;
-  cursor: default;
-}
-.comments__text {
+  margin: 50px 10px;
+  padding: 20px 40px;
+  border: 1px solid #919191;
+  font-family: 'Work Sans', sans-serif;
+  font-weight: 300;
   font-size: 18px;
-  font-family: 'Work Sans', sans-serif;
-  color: gray;
-  text-align: center;
 }
-.comments-flex2 {
-  display: flex;
-  flex-direction: row;
-  flex-wrap: wrap;
-  justify-content: center;
-
-}
-.comments__block {
-  max-width: 270px;
-  min-height: 350px;
-  text-align: center;
-  margin-top: 30px;
-  border-color: green solid 1px;
-}
-img.comments__ava {
-  max-width: 45%; 
-}
-.comments__ava {
-  border-radius: 50%;
-}
-.comments__text2 {
-  font-size: 18px;
-  font-family: 'Work Sans', sans-serif;
-  color: gray;
-  max-width: 220px;
-  margin-top: 30px;
-  margin-left: 24px;
-}
-.comments__name {
-  font-size: 30px;
-  font-family: 'Work Sans', sans-serif;
+.price {
   color: black;
-}
-.comments__work {
-  font-size: 18px;
   font-family: 'Work Sans', sans-serif;
-  color: gray;
+  font-weight: 300;
+  font-size: 18px;
+  margin-top: 70px;
+}
+.total {
+  font-size: 18px;
+  color: black;
+  font-family: 'Work Sans', sans-serif;
+  font-weight: 400;
+  margin-top: 70px;
+  margin-right: 40px;
 }
 
 
-@media screen and (width: 1050px){
-  
-}
 
 
 
 
-/*Блок-8 Подписка*/
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/*Блок-6 Подписка*/
 
 .subscribe {
   min-height: 320px;
@@ -1127,7 +780,7 @@ img.comments__ava {
   height: 53px;
   margin-top: 140px;
 }
-.button {
+.button3 {
   height: 53px;
   border-radius: 5px;
   background: #80cd51;
@@ -1137,16 +790,15 @@ img.comments__ava {
   font-size: 16px;
   font-family: 'Work Sans', sans-serif;
 }
-.button:hover {
-  background: white;
+.button3:hover {
+  background: #f7f6f2;
   color: #80cd51;
-  border: 1px solid #80cd51;
-  transition: 0.3s;
+  transition: 0.4s;
 }
 
 
 
-/*Блок-9 Футер*/
+/*Блок-7 Футер*/
 
 .footer {
   min-height: 450px;
@@ -1217,7 +869,7 @@ a#upbutton img {
 
 
 
-/*Блок-10 Копирайтер*/
+/*Блок-8 Копирайтер*/
 
 .copyright {
   min-height: 40px;
@@ -1266,6 +918,7 @@ a#upbutton img {
 }
 .window__button{
   width: 140px;
+  height: 30px;
   background: #80cd51;
   border-radius: 10px;
   display: flex;
@@ -1273,16 +926,18 @@ a#upbutton img {
   align-items: center;
   cursor: pointer;
   margin-top: 12px;
-  padding: 10px 0px;
-  font-size: 17px;
-  font-weight: 700;
-  color: white;
 }
 .window__button:hover {
   background: #6caa46;
 }
+.window_button_title{
+  font-size: 17px;
+  font-weight: 700;
+  color: white;
+}
 .window__close{
   width: 140px;
+  height: 30px;
   background: #A9A8A7;
   border-radius: 10px;
   display: flex;
@@ -1290,13 +945,14 @@ a#upbutton img {
   align-items: center;
   cursor: pointer;
   margin-top: 12px;
-  font-size: 17px;
-  font-weight: 700;
-  color: white;
-  padding: 10px 0px;
 }
 .window__close:hover {
   background: #757575;
+}
+.window_close_title{
+  font-size: 17px;
+  font-weight: 700;
+  color: white;
 }
 .window__img{
   width: 200px;
@@ -1307,3 +963,13 @@ a#upbutton img {
 img {
   width: 130%;
 }
+
+
+
+
+
+
+
+
+
+
