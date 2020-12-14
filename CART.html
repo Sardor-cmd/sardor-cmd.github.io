@@ -16,7 +16,7 @@
 	integrity="sha384-gfdkjb5BdAXd+lj+gudLWI+BXq4IuLW5IT+brZEZsLFm++aCMlF1V92rMkPaX4PP" crossorigin="anonymous">
 
 	<link rel="stylesheet" type="text/css" href="css/styleCART.css">
-	<title>Document</title>
+	<title>Cart</title>
 </head>
 <body>
 	<div class="contacts">
@@ -107,7 +107,7 @@
     							<ul>
       								<li><a href="#">Title 1</a></li>
       								<li><a href="#">Title 2</a></li>
-      								<li><a href="#">Title 3</a></li>		
+      								<li><a href="CART.html">Корзина</a></li>		
       								<li><a href="#">Title 4</a></li>
     							</ul>
   							</li>
@@ -171,51 +171,86 @@
 					<input type="text" name="quantity" class="quantity" value="1" min="1" max="100">
 					<p class="total">80$</p>
 				</div>
+				<div class="outcome">
+					<div class="outcome-flex">
+						<div class="outcome__item1 flex">
+							<p class="coupone">
+								Номер купона
+							</p>
+							<p class="coupone__code">
+								Введите код купона, если имеется.
+							</p>
+							<form action="javascript:void(0)">
+								<p class="input__text">Код купона</p><input type="text" class="input__coupone" >
+								<button class="coupone__button">
+									Добавить купон
+								</button>
+							</form>
+                        </div>
+                        <div class="outcome__item2 flex">
+                        	<p class="coupone">
+								Оценить доставку и налог
+							</p>
+							<p class="coupone__code">
+								Введите пункт назначения, чтобы узнать стоимость доставки
+							</p>
+							<form action="javascript:void(0)">
+								<p class="input__text">Страна</p><input type="text" class="input__coupone formLogin" >
+								<p class="input__text">Город</p><input type="text" class="input__coupone formLogin" >
+								<p class="input__text">Почтовый индекс</p><input type="text" class="input__coupone formLogin" >
+								<button class="coupone__button">
+									Расчитать
+								</button>
+							</form>
+                        </div>
+                        <div class="outcome__item3 flex">
+                        	<p class="coupone">
+								Итоги корзины
+							</p>
+							<div class="coupone__code">
+								<p class="title">
+									Продукты 
+								</p>
+								<p class="price1">
+									93.54$
+								</p>
+							</div>
+							<div class="coupone__code">
+								<p class="title">
+									Доставка 
+								</p>
+								<p class="price1">
+									5.00$
+								</p>
+							</div>
+							<div class="coupone__code">
+								<p class="title">
+									Скидка 
+								</p>
+								<p class="price1">
+									9.35$
+								</p>
+							</div>
+							<div class="border"></div>
+							<div class="coupone__code">
+								<p class="title1">
+									Итог 
+								</p>
+								<p class="price2">
+									89.19$
+								</p>
+							</div>
+							<form action="javascript:void(0)">
+								<button class="coupone__button">
+									Оформить заказ
+								</button>
+							</form>
+                        </div> 
+					</div>
+				</div>
 			</div>
 		</div>
 	</div>
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
 	<div class="subscribe">
 		<div class="wrapper clear">
 			<div class="subscribe-flex">
@@ -322,5 +357,15 @@
 			</p>
 		</div>
 	</div>
+	<script src="viewportchecker.js"></script>
+
+	<script src="https://code.jquery.com/jquery-3.5.1.min.js"></script>
+
+	<script type="css/hover-min.css"></script>
+
+	<script src="js/jquery.mask.min.js"></script>
+
+	<script src="js/scriptCART.js"></script>
+
 </body>
 </html>

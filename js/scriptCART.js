@@ -1,3 +1,14 @@
+let popap = document.querySelector('.window');
+    function modal () {
+        popap.classList.add('window__active');
+    }
+    setTimeout(modal, 10000);
+    let popapClose = document.querySelector('.window__close');
+    popapClose.onclick = function (){
+        popap.classList.remove('window__active');
+    }
+
+
 let smoothJumpUp = function() {
         if (document.body.scrollTop > 0 || document.documentElement.scrollTop > 0) {
             window.scrollBy(0,-50);
@@ -6,6 +17,17 @@ let smoothJumpUp = function() {
     }
 
 
+let formLogin = document.querySelector('.formLogin');
+formLogin.onsubmit = function () {
+    for (let i = 0; i < formLogin.elements.length - 1; i++) {
+        let elementsName = formLogin.elements[i].name;
+        let selector = `input[name = '${elementsName}']`;
+        document.querySelector (selector).style.border = '';
+        if (formLogin.elements[i].value == '') {
+            document.querySelector (selector).style.border = '2px dashed red';
+        }
+    }
+}
 
 
 
@@ -25,6 +47,8 @@ let smoothJumpUp = function() {
         	modal1.style.display = "none";
     	}
 	}
+
+
 
 
     let modal12 = document.getElementById('myModal1');
@@ -88,37 +112,7 @@ let smoothJumpUp = function() {
 
 
 
- 	let popap = document.querySelector('.window');
-	function modal () {
-		popap.classList.add('window__active');
-	}
-	setTimeout(modal, 5000);
-	let popapClose = document.querySelector('.window__close');
-	popapClose.onclick = function (){
-		popap.classList.remove('window__active');
-	}
-
-
-
 
 
 
     $("input[type='submit']").click(function() { return false; });
-
-
-jQuery(function($){
-            $("#phone").mask("+996 (999) 99-99-99");
-        });
-
-
-let formLogin = document.querySelector('.formLogin');
-formLogin.onsubmit = function () {
-    for (let i = 0; i < formLogin.elements.length - 1; i++) {
-        let elementsName = formLogin.elements[i].name;
-        let selector = `input[name = '${elementsName}']`;
-        document.querySelector (selector).style.border = '';
-        if (formLogin.elements[i].value == '') {
-            document.querySelector (selector).style.border = '2px dashed red';
-        }
-    }
-}

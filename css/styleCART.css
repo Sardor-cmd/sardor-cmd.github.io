@@ -696,8 +696,115 @@ nav label:hover{
   margin-top: 70px;
   margin-right: 40px;
 }
-
-
+.outcome-flex {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  flex-wrap: wrap;
+}
+.flex {
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+}
+.outcome__item1 {
+  border: 1px solid #bcbcbc;
+  width: 300px;
+  height: 360px;
+  margin: 20px 30px;
+}
+.outcome__item2 {
+  border: 1px solid #bcbcbc;
+  width: 300px;
+  height: 620px;
+  margin: 20px 30px;
+}
+.outcome__item3 {
+  border: 1px solid #bcbcbc;
+  width: 300px;
+  height: 480px;
+  margin: 20px 30px;
+}
+.coupone {
+  font-size: 22px;
+  font-family: 'Work Sans', sans-serif;
+  font-weight: 400;
+  color: black;
+  margin-left: 30px;
+}
+.coupone__code {
+  font-size: 16px;
+  font-family: 'Work Sans', sans-serif;
+  font-weight: 400;
+  color: #808080;
+  margin-left: 30px;
+  display: flex;
+  flex-direction: row;
+}
+.title {
+  width: 150px;
+  margin-bottom: 40px;
+}
+.price1 {
+  font-size: 16px;
+  font-family: 'Work Sans', sans-serif;
+  font-weight: 400;
+  color: #808080;
+}
+.input__text {
+  font-size: 16px;
+  font-family: 'Work Sans', sans-serif;
+  font-weight: 400;
+  color: #808080;
+  margin-left: 30px;
+}
+.input__coupone {
+  border: 1px solid #bcbcbc;
+  width: 80%;
+  height: 50px;
+  margin: -14px 30px;
+  margin-bottom: 25px;
+  color: black;
+  font-family: 'Work Sans', sans-serif;
+  font-weight: 400;
+}
+.coupone__button {
+  font-size: 18px;
+  font-family: 'Work Sans', sans-serif;
+  font-weight: 400;
+  color: white;
+  background: #80cd51;
+  border: 1px solid #80cd51;
+  border-radius: 35px;
+  width: 60%;
+  padding: 20px 15px; 
+  margin-left: 30px;
+  margin-top: 20px;
+}
+.coupone__button:hover {
+  background: white;
+  color: #80cd51;
+  transition: 0.4s;
+}
+.border {
+  height: 1px;
+  background: #bcbcbc;
+  width: 80%;
+  margin-left: 30px;
+}
+.title1 {
+  width: 150px;
+  font-size: 19px;
+  font-family: 'Work Sans', sans-serif;
+  font-weight: 500;
+  color: black;
+}
+.price2 {
+  font-size: 19px;
+  font-family: 'Work Sans', sans-serif;
+  font-weight: 500;
+  color: black;
+}
 
 
 
