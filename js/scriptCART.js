@@ -1,12 +1,4 @@
-let popap = document.querySelector('.window');
-    function modal () {
-        popap.classList.add('window__active');
-    }
-    setTimeout(modal, 10000);
-    let popapClose = document.querySelector('.window__close');
-    popapClose.onclick = function (){
-        popap.classList.remove('window__active');
-    }
+
 
 
 let smoothJumpUp = function() {

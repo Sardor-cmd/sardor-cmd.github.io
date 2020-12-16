@@ -81,7 +81,7 @@ img {
   padding: 0;
   border: 5px solid #80cd51;
   border-radius: 23px;
-  width: 30%;
+  width: 380px;
   text-align: center;
   box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2),0 6px 20px 0 rgba(0,0,0,0.19);
   -webkit-animation-name: animatetop;
@@ -235,7 +235,7 @@ img {
   margin: auto;
   padding: 0;
   border: 5px solid #80cd51;
-  width: 50%;
+  width: 600px;
   text-align: center;
   box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2),0 6px 20px 0 rgba(0,0,0,0.19);
   -webkit-animation-name: animatetop;
@@ -315,6 +315,33 @@ img {
   border: 1px solid #80cd51;
   transition: 0.4s;
 }
+@media screen and (width: 375px) {
+  .modal-content1 {
+    width: 340px;
+  }
+}
+@media screen and (width: 320px) {
+  .modal-content1 {
+    width: 310px;
+  }
+}
+@media screen and (width: 425px) {
+  .modal-content {
+    width: 410px;
+  }
+}
+@media screen and (width: 375px) {
+  .modal-content {
+    width: 360px;
+  }
+}
+@media screen and (width: 320px) {
+  .modal-content {
+    width: 310px;
+  }
+}
+
+
 
 
 
@@ -742,7 +769,7 @@ textarea {
 .footer__item {
   max-width: 300px;
   margin: 30px;
-  min-height: 430px;
+  min-height: 390px;
 }
 .footer-flex1 {
   display: flex;
@@ -754,8 +781,8 @@ textarea {
   font-family: 'Work Sans' , sans-serif;
   font-weight: 600;
   font-size: 20px;
-  padding-bottom: 30px;
-  padding-top: 100px;
+  padding-bottom: 10px;
+  padding-top: 20px;
 }
 .footer__text {
   font-size: 16px;
