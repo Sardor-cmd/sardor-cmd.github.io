@@ -9,17 +9,10 @@ let smoothJumpUp = function() {
     }
 
 
-let formLogin = document.querySelector('.formLogin');
-formLogin.onsubmit = function () {
-    for (let i = 0; i < formLogin.elements.length - 1; i++) {
-        let elementsName = formLogin.elements[i].name;
-        let selector = `input[name = '${elementsName}']`;
-        document.querySelector (selector).style.border = '';
-        if (formLogin.elements[i].value == '') {
-            document.querySelector (selector).style.border = '2px dashed red';
-        }
-    }
-}
+
+
+
+
 
 
 
@@ -43,6 +36,27 @@ formLogin.onsubmit = function () {
 
 
 
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
     let modal12 = document.getElementById('myModal1');
     let btn2 = document.getElementById("myBtn1");
     let span2 = document.getElementsByClassName("close1")[0];
@@ -60,6 +74,7 @@ formLogin.onsubmit = function () {
         }
     }
 
+    let input = document.querySelector ('.contact__item2')
     let btn = document.getElementById ('btn234');
     let str_sec = document.querySelector ('#sec');
     let str_msec = document.querySelector ('#msec');
@@ -69,12 +84,12 @@ formLogin.onsubmit = function () {
     let id2;
 
     btn.onclick = function () {
-        if (input.value == '') {
-            return;
-        }
-        else if (input.value == ' ') {
+        if (input.value == ' ') {
             id1 = setInterval (timer_s, 1000);
             id2 = setInterval (timer_ms, 12);
+        }
+        else {
+            return;
         }
     }
 
@@ -107,4 +122,83 @@ formLogin.onsubmit = function () {
 
 
 
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
     $("input[type='submit']").click(function() { return false; });
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+let form = document.querySelector ('.userAccount');
+const URLS = {
+    createData: 'https://reqres.in/api/users',
+    getUsers: 'https://reqres.in/api/users'
+}
+
+form.onsubmit = function () {
+    let elements = this.elements;
+    let obj = {};
+    for (let i = 0; i < elements.length - 1; i++) {
+        let name = elements[i].name;
+        obj [name] =  elements[i].value;
+        
+    }
+    callApiPost (obj);
+}
+
+function callApiPost (data_object) {
+    let options = {
+        method: "POST",
+        headers: {
+            'Content-type':'application/json'
+        },
+        body: JSON.stringify ({data_object}) 
+    }
+    fetch (URLS.createData, options)
+    .then (response => {
+        if (response.ok) {
+            return response.json ();
+        }
+        else {
+            alert ('ERROR');
+        }
+    })
+    .then (data => {
+        if (data.id) {
+            alert ('Success')
+        }
+    })
+}
+
+
+
+    
